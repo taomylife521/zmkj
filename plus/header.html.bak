@@ -1,6 +1,6 @@
 ﻿
     <div class="page-width clearfix">
-        <div class="logo float-left" skinobjectzone="HtmlLogo_408"><a href="../index.html"><img src="skin/img/logo.png" alt="河北正镁新材料科技有限公司" /></a></div>
+        <div class="logo float-left" skinobjectzone="HtmlLogo_408"><a href="../index.html"><img src="../skin/img/logo.png" alt="河北正镁新材料科技有限公司" /></a></div>
         <!-- end of logo -->
         <div class="top-main-content float-right">
             <!-- S nav -->
