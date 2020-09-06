@@ -3,8 +3,8 @@
      * 导航栏
      * footer CopyRight
      */
-    $(".top-main").load("header.html");
-    $(".touch-top-home").load("touchheader.html")
-    $(".footer").load("footer.html");
-    $(".bottom").load("bottom.html");
+    $(".top-main").load("../plus/inner_header.html");
+    $(".touch-top-home").load("../plus/inner_touchheader.html")
+    $(".footer").load("inner_footer.html");
+    $(".bottom").load("inner_bottom.html");
 });

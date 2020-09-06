@@ -1,0 +1,94 @@
+﻿<div class="drawer-section drawer-section-language"> </div>
+<div class="drawer-section drawer-section-menu">
+    <div class="touch-menu" skinobjectzone="menu_3106">
+        <ul>
+            <li><a href="../index.html"><span>首页</span></a></li>
+            <li>
+                <a href="javascript:;"><span>关于我们</span></a>
+                <ul>
+
+                    <li><a href="gsjj.html"><span>公司简介</span></a></li>
+
+                    <li><a href="qywh.html"><span>企业文化</span></a></li>
+
+                </ul>
+            </li>
+            <li>
+                <a href="javascript:;"><span>产品中心</span><i class="touch-arrow-down"></i></a>
+                <ul>
+
+                    <li><a href="fxcjyhm.html"><span>分析纯级氧化镁</span></a></li>
+
+                    <li><a href="shjstsm.html"><span>水合碱式碳酸镁</span></a></li>
+
+                    <li><a href="qyhm.html"><span>氢氧化镁</span></a></li>
+
+                    <li><a href="qzyhm.html"><span>轻质氧化镁</span></a></li>
+
+                    <li><a href="hxyhm.html"><span>活性氧化镁</span></a></li>
+
+                    <li><a href="sjjyhm.html"><span>试剂级氧化镁</span></a></li>
+
+                </ul>
+            </li>
+            <li>
+                <a href="javascript:;"><span>应用领域</span><i class="touch-arrow-down"></i></a>
+                <ul>
+                </ul>
+            </li>
+            <li>
+                <a href="javascript:;"><span>新闻中心</span><i class="touch-arrow-down"></i></a>
+                <ul>
+
+                    <li><a href="gsxw.html"><span>公司新闻</span></a></li>
+
+                    <li><a href="hyxw.html"><span>行业新闻</span></a></li>
+
+                </ul>
+            </li>
+            <li>
+                <a href="javascript:;"><span>加入我们</span><i class="touch-arrow-down"></i></a>
+                <ul>
+
+                    <li><a href="plus/list.php?tid=23"><span>人才政策</span></a></li>
+
+                    <li><a href="plus/list.php?tid=24"><span>人才招聘</span></a></li>
+
+                </ul>
+            </li>
+            <li><a href="lxwm.html"><span>联系我们</span></a></li>
+        </ul>
+    </div>
+</div>
+<script type="text/javascript">
+        $(document).ready(function(){
+
+            $(".touch-toggle a").click(function(event){
+                var className = $(this).attr("data-drawer");
+
+                if( $("."+className).css('display') == 'none' ){
+                    $("."+className).slideDown().siblings(".drawer-section").slideUp();
+                }else{
+                    $(".drawer-section").slideUp();
+                }
+                event.stopPropagation();
+            });
+
+            //$(document).click(function(){
+            // $(".drawer-section").slideUp();
+            //})
+
+            $('.touch-menu a').click(function(){
+                if( $(this).next().is('ul') ){
+                    if( $(this).next('ul').css('display') == 'none' ){
+                        $(this).next('ul').slideDown();
+                        $(this).find('i').attr("class","touch-arrow-up");
+                    }else{
+                        $(this).next('ul').slideUp();
+                        $(this).next('ul').find('ul').slideUp();
+                        $(this).find('i').attr("class","touch-arrow-down");
+                    }
+                }
+            });
+        });
+</script>
